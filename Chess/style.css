@@ -7,6 +7,7 @@ body{
     align-items:center;
     justify-content:center;
     font-family: 'Urbanist', sans-serif;
+    gap:24px;
     overflow:hidden;
     width:100vw;
     height:100vh;
@@ -64,4 +65,68 @@ body{
     top:6px;
     margin:0;
     text-shadow:0 0 6px gray;
+}
+
+#chess-notation{
+    display:flex;
+    flex-direction:column;
+    height:512px;
+    width:192px;
+    border:1px solid gray;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+#chess-notation > div{
+    border-bottom:1px solid gray;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+#chess-notation > div:first-of-type > div{
+    background:lightgray;
+    justify-content:center;
+    font-size:12px;
+    font-weight:700;
+    text-shadow: 0 0 6px gray;
+}
+
+#chess-notation > div > div{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-end;
+    width:84px;
+    height:24px;
+    text-align:right;
+    padding:0 6px;
+}
+
+#chess-notation > div > div:first-of-type{
+    border-right:1px solid gray;
+}
+
+#chess-notation > div > div > h1{
+    text-shadow:0 0 4px gray;
+    color:black;
+    font-size:14px;
+    position:absolute;
+    left:6px;
+    margin:0;
+}
+
+#chess-notation > div > div > p{
+    font-size:12px;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+    color:gray;
+    height:14px;
+}
+
+#chess-notation > div > div > p > span > img{
+    height:12px;
 }
