@@ -70,11 +70,14 @@ body{
 #chess-notation{
     display:flex;
     flex-direction:column;
-    height:512px;
+    height:488px;
     width:192px;
     border:1px solid gray;
     border-radius:12px;
-    overflow:hidden;
+    overflow-x:hidden;
+    position:relative;
+    padding-top:24px;
+    overflow-y:scroll;
 }
 
 #chess-notation > div{
@@ -83,6 +86,11 @@ body{
     flex-direction:row;
     align-items:center;
     justify-content:center;
+}
+
+#chess-notation > div:first-of-type{
+    position:absolute;
+    top:0;
 }
 
 #chess-notation > div:first-of-type > div{
